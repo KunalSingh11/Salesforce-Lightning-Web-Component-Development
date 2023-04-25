@@ -1,0 +1,15 @@
+<template>
+    <div class="slds-box">
+        <lightning-card title="Iterator Example">
+            <ul class="slds-m-around_medium">
+                <template iterator:it={List}>
+                    <li key={it.value.id}>
+                        <div if:true={it.first} class="firstElementCss"></div>
+                        {it.value.Name}, {it.value.Age}
+                        <div if:true={it.last} class="lastElementCss"></div>
+                    </li>
+                </template>
+            </ul>
+        </lightning-card>
+    </div>
+</template>

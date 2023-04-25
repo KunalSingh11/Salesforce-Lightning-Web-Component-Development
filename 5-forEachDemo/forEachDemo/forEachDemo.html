@@ -1,0 +1,11 @@
+<template>
+    <div class="slds-box">
+        <lightning-card title="For Each Example">
+            <ul class="slds-m-around_medium">
+                <template for:each={List} for:item="listItem">
+                    <li key={listItem.id}>{listItem.Name}, {listItem.Age} years </li>
+                </template>
+            </ul>
+        </lightning-card>
+    </div>
+</template>
