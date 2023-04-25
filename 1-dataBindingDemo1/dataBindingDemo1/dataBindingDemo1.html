@@ -1,0 +1,18 @@
+<template>
+    <div class="slds-box">
+
+        <lightning-card title="Data Binding Demo">
+
+            <div class="slds-box">
+                <lightning-input class="slds-m-around_medium" label="Enter Name " type="text"
+                    onchange={nameHandler}></lightning-input>
+            </div>
+
+            <div class="slds-box">
+                <p>Hello {name}</p>
+            </div>
+
+        </lightning-card>
+
+    </div>
+</template>

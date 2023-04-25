@@ -1,0 +1,26 @@
+<template>
+
+    <div class="slds-box">
+
+        <template if:false={show}>
+            <lightning-card title="Enter Employee Details">
+                <lightning-input type="text" label="Enter Name" name="Name" class="slds-m-around_medium"
+                    onchange={inputHandler}></lightning-input>
+                <lightning-input type="number" label="Age" name="Age" class="slds-m-around_medium"
+                    onchange={inputHandler}></lightning-input>
+
+                <lightning-button variant="brand" label="Save" class="slds-m-around_medium"
+                    onclick={saveHandler}></lightning-button>
+
+            </lightning-card>
+        </template>
+
+        <template if:true={show}>
+            <lightning-card title="Employee Info">
+                <p class="slds-m-around_medium">Name: <strong>{Name}</strong></p>
+                <p class="slds-m-around_medium">Age: <strong>{Age}</strong></p>
+            </lightning-card>
+        </template>
+
+    </div>
+</template>

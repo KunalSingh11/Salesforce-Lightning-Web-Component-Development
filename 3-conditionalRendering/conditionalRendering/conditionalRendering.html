@@ -1,0 +1,24 @@
+<template>
+    <lightning-card title="Conditional Rendering of DOM">
+
+        <lightning-button label="Switch property" variant="brand" class="slds-m-around_medium"
+            onclick={variableSwitcher}></lightning-button>
+
+        <div class="slds-box">
+            <template if:true={variable}>
+                <strong>
+                    <h1>I am rendered if property is true</h1>
+                </strong>
+            </template>
+        </div>
+
+        <div class="slds-box">
+            <template if:false={variable}>
+                <strong>
+                    <h1>I am rendered if property is false</h1>
+                </strong>
+            </template>
+        </div>
+
+    </lightning-card>
+</template>

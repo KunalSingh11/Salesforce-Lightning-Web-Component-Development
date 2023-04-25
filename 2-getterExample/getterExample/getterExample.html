@@ -1,0 +1,28 @@
+<template>
+
+    <div class="slds-box">
+
+        <lightning-card title="Getter Example">
+
+            <lightning-input class="slds-m-around_medium" name="firstName" label="First Name"
+                onchange={nameHandler}></lightning-input>
+
+            <lightning-input class="slds-m-around_medium" name="lastName" label="Last Name"
+                onchange={nameHandler}></lightning-input>
+
+            <div class="slds-box">
+                <p><strong>Using {}</strong></p>
+                <p>First Name = {firstName}</p>
+                <p>Last Name = {lastName}</p>
+            </div>
+
+            <div class="slds-box">
+                <p><strong>Using getter(){}</strong></p>
+                <p class="slds-m-top_medium">Uppercased Full Name: {uppercasedFullName}</p>
+            </div>
+
+        </lightning-card>
+
+    </div>
+
+</template>
