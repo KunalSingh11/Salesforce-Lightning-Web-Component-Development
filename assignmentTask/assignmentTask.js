@@ -58,6 +58,10 @@ export default class CustomAccountTab extends LightningElement {
 
     }
 
+    handleComboBoxChange(event){
+
+    }
+
     resultData;
     searchKey = '';
 
@@ -74,5 +78,5 @@ export default class CustomAccountTab extends LightningElement {
         } else if (error) {
             console.log(error);
         }
-    }
+    }    
 }
